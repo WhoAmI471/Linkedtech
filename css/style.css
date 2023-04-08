@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Hind Siliguri', sans-serif;
-  background-color: aqua;
-
+  /* background-color: aqua; */
 }
 
 .container {
@@ -22,7 +21,6 @@ body {
 }
 
 /* header */
-
 
 .main-menu {
   display: flex;
@@ -107,6 +105,7 @@ a.text {
   text-transform: uppercase;
 
   color: #C72535;
+  opacity: 0.6;
 }
 
 h1 {
@@ -189,9 +188,18 @@ span {
 
 
 .area__title .alert,
-.discript,
+.area__title .discript,
 .title__name {
   text-align: center;
+}
+
+.discript {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #030D15;
+  opacity: 0.6;
 }
 
 .title__name {
@@ -300,12 +308,71 @@ span {
 
 .user__contact {
   height: 310px;
-
   margin-top: 130px;
 
   background-color: #F4F9FC;
 }
 
+.contact__sub {
+  min-height: 310px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .discript {
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+.subscribe form{
+  width: 475px;
+  height: 50px;
+
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub__mail {
+  height: 100%;
+  width: 73%;
+}
+
+.sub__btn {
+  height: 100%;
+  width: 27%;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  background: #247CC0;
+
+  border: 0;
+}
+
+
+input[type=text] {
+  width: 100%;
+
+  padding-left: 26px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #030D15;
+  
+  opacity: 0.4;
+  
+}
 
 /*------------- Footer -------------*/
 
