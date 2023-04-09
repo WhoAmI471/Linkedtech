@@ -6,44 +6,43 @@
 
 body {
   font-family: 'Hind Siliguri', sans-serif;
-  /* background-color: aqua; */
 }
 
 .container {
   max-width: 1140px;
+  /* background-color: #666; */
+
   /* background-color: rgb(95, 55, 55); */
   margin: 0 auto;
 }
 
 .section__wrapper {
   width: 100%;
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  overflow-x: hidden;
 }
 
-/* header */
+/*------------- header -------------*/
 
 .main-menu {
+  height: 90px;
+
   display: flex;
   justify-content: space-between;
-  height: 90px;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  width: 573px;
   justify-content: space-between;
 }
 
 .item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 23px;
-
-  text-transform: uppercase;
+  margin: 0 20px;
 
   list-style-type: none;
 
+  text-transform: uppercase;
   color: #030D15;
 }
 
@@ -60,6 +59,12 @@ body {
   margin-left: 24px;
 }
 
+.item a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
 a.text:active, /* активная/посещенная ссылка */
 a.text:hover,  /* при наведении */
 a.text {
@@ -68,11 +73,10 @@ a.text {
 }
 
 
-/* -------Hero area--------- */
+/*------------- Hero area -------------*/
 
 .hero__area {
   margin-top: 54px;
-
 }
 
 .hero__area .container {
@@ -85,15 +89,14 @@ a.text {
   position: absolute;
   z-index: 0;
 
-  width: 643px;
-  height: 611px;
+  width: 56%;
   right: -86px;
-
 }
 
 .info {
   margin-top: 75px;
   z-index: 1;
+  width: 48%;
 }
 
 .alert {
@@ -112,7 +115,6 @@ h1 {
   font-weight: 400;
   font-size: 61px;
   line-height: 73px;
-  /* or 120% */
 
   color: #030D15;
 }
@@ -120,7 +122,7 @@ h1 {
 span {
   font-weight: 600;
   line-height: normal;
-/* c8e3f8 */
+  
   color: #247CC0;
   background-color: rgba(36, 124, 192, 0.1);
 }
@@ -131,14 +133,12 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  /* or 135% */
-
 
   color: #030D15;
 }
 
 .shop__btn {
-  width: 151px;
+  min-width: 151px;
   height: 58px;
 
   margin-top: 36px;
@@ -157,10 +157,15 @@ span {
 
 .banner {
   margin-top: 73px;
+  margin-bottom: 130px;
+
   width: 100%;
   height: 237px;
 
-  z-index: 1;
+  padding: 6% 10% 6% 10%;
+
+  position: relative;
+  /* z-index: 10; */
 
   background-color: #FFFFFF;
 
@@ -173,16 +178,25 @@ span {
 }
 
 .banner__items {
+  width: 100%;
+  height: auto;
+
   display: flex;
   justify-content: space-between;
-  width: 79%;
-  height: auto;
+}
+
+.banner__item {
+  width: 18%;
+}
+
+.banner__item img{
+  width: 100%;
 }
 
 /*------------- cards__area -------------*/
 
 .cards__area {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   width: 100%;
 } 
 
@@ -290,8 +304,24 @@ span {
   background-position: center;
 }
 
-.tech__img6 img {
-  height: 90%;
+/* .tech__img1, */
+.tech__img2,
+.tech__img3,
+.tech__img4,
+/* .tech__img5, */
+.tech__img7{
+  padding: 20px;
+}
+
+/* .tech__img1 img, */
+.tech__img2 img,
+.tech__img3 img,
+.tech__img4 img,
+.tech__img5 img,
+.tech__img6 img,
+.tech__img7 img {
+  height: 100%;
+  width: 100%;
 }
 
 .tech__img1:hover,
@@ -323,19 +353,35 @@ span {
 
 .contact .discript {
   margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 21px;
 }
 
+.contact h3{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.contact {
+  width: 32%;
+}
+
+.subscribe {
+  width: 42%;
+}
+
 .subscribe form{
-  width: 475px;
+  width: 100%;
   height: 50px;
 
-
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sub__mail {
@@ -354,7 +400,6 @@ span {
 
   color: #FFFFFF;
   background: #247CC0;
-
   border: 0;
 }
 
@@ -369,20 +414,19 @@ input[type=text] {
   line-height: 21px;
 
   color: #030D15;
-  
   opacity: 0.4;
-  
 }
 
 /*------------- Footer -------------*/
 
 .foot {
-  background: #000;
-  height: 396px;
+  background-color: #000;
+  min-height: 396px;
 }
 
 .about {
   margin-top: 5px;
+  width: 23%;
 }
 
 .footer__items {
@@ -458,3 +502,89 @@ input[type=text] {
   
   color: #FFFFFF;
 }
+
+
+
+
+
+@media (max-width:1200px) {
+  .container {
+    max-width: 970px;
+  }
+
+  /*------------- header -------------*/
+  .item {
+    margin: 0 10px;
+  }
+
+  .tech__cards {
+    height: 716px;
+  }
+
+  /*------------- banner -------------*/
+  .hero__area{
+    margin-top: 0;
+  }
+
+  .colonka {
+    top: 40px;
+    right: -20px;
+  }
+
+  .banner {
+    margin-top: 0;
+    height: 180px;
+  }
+}
+
+@media (max-width:992px) {
+
+  .container {
+    max-width: 750px;
+  }
+
+  /*------------- banner -------------*/
+
+  .info h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .info .text,
+  .shop__btn {
+    margin-top: 10px;
+  }
+
+  .banner {
+    height: 150px;
+    padding: 0 10px 0 10px;
+    margin-bottom: 80px;
+  }
+
+  .banner__item {
+    width: 20%;
+  }
+
+  /*------------- cards -------------*/
+  .tech__cards {
+    height: 556px;
+  }
+}
+
+@media (max-width:767px) {
+  .container {
+    max-width: none;
+    padding: 0 10px 0 10px;
+    /* background-color: blueviolet; */
+  }
+
+  .colonka {
+    width: 0;
+  }
+  
+  .info {
+    width: 100%;
+  }
+
+}
+
