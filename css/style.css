@@ -240,7 +240,6 @@ span {
   align-items: center;
   justify-content: center;
 
-  
   background: #FFFFFF;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -249,11 +248,6 @@ span {
 .tech__img1 {
   grid-column: 1/5;
   grid-row: 1/6;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .tech__img2 {
@@ -304,16 +298,14 @@ span {
   background-position: center;
 }
 
-/* .tech__img1, */
 .tech__img2,
 .tech__img3,
 .tech__img4,
-/* .tech__img5, */
 .tech__img7{
   padding: 20px;
 }
 
-/* .tech__img1 img, */
+.tech__img1 img,
 .tech__img2 img,
 .tech__img3 img,
 .tech__img4 img,
@@ -575,7 +567,6 @@ input[type=text] {
   .container {
     max-width: none;
     padding: 0 10px 0 10px;
-    /* background-color: blueviolet; */
   }
 
   .colonka {
@@ -586,5 +577,130 @@ input[type=text] {
     width: 100%;
   }
 
+  .tech__cards {
+    height: 1500px;
+    grid-gap: 10px;
+    
+  }
+
+  .tech__img1 {
+    grid-column: 1/7;
+    grid-row: 1/4;
+  }
+  
+  .tech__img2 {
+    grid-column: 7/-1;
+    grid-row: 1/4;
+  }
+  
+  .tech__img3 {
+    grid-column: 1/6;
+    grid-row: 4/7;
+  }
+  
+  .tech__img4 {
+    grid-column: 1/7;
+    grid-row: 7/11;
+  }
+  
+  .tech__img5 {
+    grid-column: 6/-1;
+    grid-row: 4/7;
+  }
+  
+  .tech__img6 {
+    grid-column: 7/-1;
+    grid-row: 7/11;
+  }
+  
+  .tech__img7 {
+    grid-column: 4/10;
+    grid-row: 11/-1;
+  }
+
+  .contact__sub {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:500px) {
+
+  .tech__cards {
+    height: 1500px;
+  }
+
+  .tech__img1 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  
+  .tech__img2 {
+    grid-column: 1/-1;
+    grid-row: 2/4;
+
+    padding: 0;
+  }
+  
+  .tech__img2 img {
+    width: auto;
+    height: 100%;
+  }
+  
+  .tech__img3 {
+    grid-column: 1/-1;
+    grid-row: 4/7;
+
+    padding: 0;
+  }
+
+  .tech__img3 img {
+    width: auto;
+    height: 100%;
+  }
+
+  .tech__img4 {
+    grid-column: 1/-1;
+    grid-row: 9/10;
+  }
+
+  .tech__img4 img{
+    width: auto;
+    height: 100%;
+  }
+  
+  .tech__img5 {
+    grid-column: 1/-1;
+    grid-row: 7/9;
+  }
+
+  .tech__img5 img {
+    width: auto;
+    height: 100%;
+  }
+  
+  .tech__img6 {
+    grid-column: 1/-1;
+    grid-row: 10/12;
+  }
+  
+  .tech__img6 img{
+    width: auto;
+    height: 100%;
+  }
+
+  .tech__img7 {
+    grid-column: 1/-1;
+    grid-row: 12/-1;
+  }
 }
 
