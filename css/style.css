@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .container {
@@ -19,14 +19,14 @@ body {
 .section__wrapper {
   width: 100%;
   /* background-color: #FFFFFF; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /*------------- header -------------*/
 
 .header {
   position: fixed;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 100%;
   z-index: 100;
 
@@ -36,7 +36,6 @@ body {
 .main-menu {
   height: 90px;
 
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +52,7 @@ body {
   list-style-type: none;
 
   text-transform: uppercase;
-  color: #030D15;
+  color: #030d15;
 }
 
 .basket {
@@ -85,9 +84,11 @@ a.text {
 .burger {
   width: 0px;
   height: 50px;
+
   box-sizing: border-box;
   background-color: transparent;
   border: none;
+
   cursor: pointer;
   position: relative;
   z-index: 110;
@@ -104,28 +105,27 @@ a.text {
   transition: 0.3s ease-in-out;
 }
 
-.burger__line:nth-child(1){
+.burger__line:nth-child(1) {
   top: 0;
 }
 
-.burger__line:nth-child(2){
+.burger__line:nth-child(2) {
   top: 20px;
 }
 
-.burger__line:nth-child(3){
+.burger__line:nth-child(3) {
   top: 20px;
 }
 
-.burger__line:nth-child(4){
+.burger__line:nth-child(4) {
   top: 40px;
 }
-
-
 
 /*------------- Hero area -------------*/
 
 .hero__area {
-  margin-top: 144px;
+  /* margin-top: 144px; */
+  margin-top: 219px;
 }
 
 .hero__area .container {
@@ -156,7 +156,7 @@ a.text {
   letter-spacing: 0.145em;
   text-transform: uppercase;
 
-  color: #C72535;
+  color: #c72535;
   opacity: 0.6;
 }
 
@@ -165,14 +165,14 @@ h1 {
   font-size: 61px;
   line-height: 73px;
 
-  color: #030D15;
+  color: #030d15;
 }
 
 span {
   font-weight: 600;
   line-height: normal;
-  
-  color: #247CC0;
+
+  color: #247cc0;
   background-color: rgba(36, 124, 192, 0.1);
 }
 
@@ -183,7 +183,7 @@ span {
   font-size: 20px;
   line-height: 27px;
 
-  color: #030D15;
+  color: #030d15;
 }
 
 .shop__btn {
@@ -198,8 +198,8 @@ span {
 
   text-transform: uppercase;
 
-  color: #FFFFFF;
-  background: #247CC0;
+  color: #ffffff;
+  background: #247cc0;
 
   border: 0;
 }
@@ -216,13 +216,18 @@ span {
   position: relative;
   /* z-index: 10; */
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0px 100px 80px rgba(174, 174, 174, 0.08), 0px 43.751px 36.4414px rgba(174, 174, 174, 0.0575083), 0px 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886), 0px 6.77214px 9.61331px rgba(174, 174, 174, 0.04), 0px 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114), 0px -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
+  box-shadow: 0px 100px 80px rgba(174, 174, 174, 0.08),
+    0px 43.751px 36.4414px rgba(174, 174, 174, 0.0575083),
+    0px 19.8401px 19.1406px rgba(174, 174, 174, 0.0476886),
+    0px 6.77214px 9.61331px rgba(174, 174, 174, 0.04),
+    0px 0.190079px 4.14347px rgba(174, 174, 174, 0.0323114),
+    0px -1.73968px 1.20532px rgba(174, 174, 174, 0.0224916);
   border-radius: 0px;
 }
 
@@ -238,7 +243,7 @@ span {
   width: 18%;
 }
 
-.banner__item img{
+.banner__item img {
   width: 100%;
 }
 
@@ -247,8 +252,7 @@ span {
 .cards__area {
   /* margin-top: 130px; */
   width: 100%;
-} 
-
+}
 
 .area__title .alert,
 .area__title .discript,
@@ -260,8 +264,8 @@ span {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  
-  color: #030D15;
+
+  color: #030d15;
   opacity: 0.6;
 }
 
@@ -284,12 +288,12 @@ span {
   grid-gap: 30px;
 }
 
-.tech__cards div{
+.tech__cards div {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #FFFFFF;
+  background: #ffffff;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -318,7 +322,7 @@ span {
 .tech__img4 {
   grid-column: 1/5;
   grid-row: 6/-1;
-  
+
   background-size: cover;
   background-position: center;
 }
@@ -350,7 +354,7 @@ span {
 .tech__img2,
 .tech__img3,
 .tech__img4,
-.tech__img7{
+.tech__img7 {
   padding: 20px;
 }
 
@@ -372,7 +376,12 @@ span {
 .tech__img5:hover,
 .tech__img6:hover,
 .tech__img7:hover {
-  box-shadow: 0px 100px 80px rgba(192, 192, 192, 0.07), 0px 41.7776px 33.4221px rgba(192, 192, 192, 0.0503198), 0px 22.3363px 17.869px rgba(192, 192, 192, 0.0417275), 0px 12.5216px 10.0172px rgba(192, 192, 192, 0.035), 0px 6.6501px 5.32008px rgba(192, 192, 192, 0.0282725), 0px 2.76726px 2.21381px rgba(192, 192, 192, 0.0196802);
+  box-shadow: 0px 100px 80px rgba(192, 192, 192, 0.07),
+    0px 41.7776px 33.4221px rgba(192, 192, 192, 0.0503198),
+    0px 22.3363px 17.869px rgba(192, 192, 192, 0.0417275),
+    0px 12.5216px 10.0172px rgba(192, 192, 192, 0.035),
+    0px 6.6501px 5.32008px rgba(192, 192, 192, 0.0282725),
+    0px 2.76726px 2.21381px rgba(192, 192, 192, 0.0196802);
 }
 
 /*------------- user contact -------------*/
@@ -381,7 +390,7 @@ span {
   height: 310px;
   margin-top: 130px;
 
-  background-color: #F4F9FC;
+  background-color: #f4f9fc;
 }
 
 .contact__sub {
@@ -399,7 +408,7 @@ span {
   line-height: 21px;
 }
 
-.contact h3{
+.contact h3 {
   font-weight: 500;
   font-size: 25px;
   line-height: 40px;
@@ -413,7 +422,7 @@ span {
   width: 42%;
 }
 
-.subscribe form{
+.subscribe form {
   width: 100%;
   height: 50px;
 
@@ -421,7 +430,7 @@ span {
   align-items: center;
   justify-content: center;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -441,13 +450,12 @@ span {
   line-height: 23px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
-  background: #247CC0;
+  color: #ffffff;
+  background: #247cc0;
   border: 0;
 }
 
-
-input[type=text] {
+input[type="email"] {
   width: 100%;
 
   padding-left: 26px;
@@ -456,7 +464,7 @@ input[type=text] {
   font-size: 14px;
   line-height: 21px;
 
-  color: #030D15;
+  color: #030d15;
   opacity: 0.4;
 }
 
@@ -480,8 +488,8 @@ input[type=text] {
   justify-content: space-between;
 }
 
-.item__name{
-  color: #FFFFFF;
+.item__name {
+  color: #ffffff;
   text-transform: uppercase;
 
   font-weight: 600;
@@ -489,30 +497,30 @@ input[type=text] {
   line-height: 26px;
 }
 
-.footer__info{
+.footer__info {
   margin-top: 26px;
+  width: 100%;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
 
-  color: #FFFFFF;
-  
+  color: #ffffff;
+
   opacity: 0.6;
-  
+
   list-style-type: none;
 }
 
-.footer__info li{
+.footer__info li {
   margin-bottom: 15px;
 }
 
-
-.footer__info li a{
-  color: #FFFFFF;
+.footer__info li a {
+  width: 100%;
+  color: #ffffff;
   text-decoration: none;
 }
-
 
 .footer__info li a:hover {
   color: #25a0ff;
@@ -524,8 +532,8 @@ input[type=text] {
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
-  
-  color: #FFFFFF; 
+
+  color: #ffffff;
 }
 
 .links {
@@ -535,10 +543,9 @@ input[type=text] {
 
   display: flex;
   justify-content: space-between;
-
 }
 
-.lang { 
+.lang {
   margin-top: 52px;
 
   width: 30%;
@@ -553,15 +560,11 @@ input[type=text] {
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
-  
-  color: #FFFFFF;
+
+  color: #ffffff;
 }
 
-
-
-
-
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 970px;
   }
@@ -576,8 +579,8 @@ input[type=text] {
   }
 
   /*------------- banner -------------*/
-  .hero__area{
-    margin-top: 0;
+  .hero__area {
+    margin-top: 50px;
   }
 
   .colonka {
@@ -597,15 +600,14 @@ input[type=text] {
   }
 }
 
-@media (max-width:992px) {
-
+@media (max-width: 992px) {
   .container {
     max-width: 750px;
   }
 
   /*------------- banner -------------*/
 
-  .info h1{
+  .info h1 {
     font-size: 40px;
     line-height: 40px;
   }
@@ -630,23 +632,25 @@ input[type=text] {
     height: 556px;
   }
 
-  
   /*------------- user__contact -------------*/
 
   .sub__btn {
     padding: 13px 16px;
   }
+
+  /*----------------- footer ------------------*/
+  /* .footer__item {
+    margin: 0px 10px 0px 10px;
+  } */
 }
 
-@media (max-width:767px) {
-
+@media (max-width: 767px) {
   .menu__burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
   }
-
 
   .container {
     max-width: none;
@@ -656,7 +660,7 @@ input[type=text] {
   .colonka {
     width: 0;
   }
-  
+
   .info {
     width: 100%;
   }
@@ -670,32 +674,32 @@ input[type=text] {
     grid-column: 1/7;
     grid-row: 1/4;
   }
-  
+
   .tech__img2 {
     grid-column: 7/-1;
     grid-row: 1/4;
   }
-  
+
   .tech__img3 {
     grid-column: 1/6;
     grid-row: 4/7;
   }
-  
+
   .tech__img4 {
     grid-column: 1/7;
     grid-row: 7/11;
   }
-  
+
   .tech__img5 {
     grid-column: 6/-1;
     grid-row: 4/7;
   }
-  
+
   .tech__img6 {
     grid-column: 7/-1;
     grid-row: 7/11;
   }
-  
+
   .tech__img7 {
     grid-column: 4/10;
     grid-row: 11/-1;
@@ -714,17 +718,45 @@ input[type=text] {
     width: 100%;
   }
 
-
   /*------------- user__contact -------------*/
 
   .sub__btn {
     padding: 13px 27px;
   }
+
+  /*----------------- footer ------------------*/
+  /* .footer__items {
+    width: 100%;
+  }
+
+
+  .footer__item {
+    margin: 0px 10px 0px 10px;
+    width: 20%;
+  } */
+
+  .footer__items {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer__item {
+    margin-top: 30px;
+  }
+
+  .about {
+    width: 80%;
+    text-align: center;
+  }
+
+  .links {
+    width: 100%;
+  }
 }
 
-
-@media (max-width:500px) {
-
+@media (max-width: 500px) {
   .tech__cards {
     height: 1500px;
   }
@@ -733,19 +765,19 @@ input[type=text] {
     grid-column: 1/-1;
     grid-row: 1/2;
   }
-  
+
   .tech__img2 {
     grid-column: 1/-1;
     grid-row: 2/4;
 
     padding: 0;
   }
-  
+
   .tech__img2 img {
     width: auto;
     height: 100%;
   }
-  
+
   .tech__img3 {
     grid-column: 1/-1;
     grid-row: 4/7;
@@ -763,11 +795,11 @@ input[type=text] {
     grid-row: 9/10;
   }
 
-  .tech__img4 img{
+  .tech__img4 img {
     width: auto;
     height: 100%;
   }
-  
+
   .tech__img5 {
     grid-column: 1/-1;
     grid-row: 7/9;
@@ -777,13 +809,13 @@ input[type=text] {
     width: auto;
     height: 100%;
   }
-  
+
   .tech__img6 {
     grid-column: 1/-1;
     grid-row: 10/12;
   }
-  
-  .tech__img6 img{
+
+  .tech__img6 img {
     width: auto;
     height: 100%;
   }
@@ -792,5 +824,10 @@ input[type=text] {
     grid-column: 1/-1;
     grid-row: 12/-1;
   }
-}
 
+  input[type="email"] {
+    padding-left: 6px;
+
+    font-size: 12px;
+  }
+}

@@ -1,235 +1,347 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedtech</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="section__wrapper">
-      <div class="container main-menu">
-        <div class="logo">
-          <img src="img/Logo.svg" alt="">
-        </div>
-        <nav class="wrapper__menu">
-          <ul class="menu">
-            <li class="item">
-              <a class="text" href="#">
-                home 
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="text" href="#">
-                about
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="text" href="#">
-                product
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+    <link rel="stylesheet" href="css/style.css" />
 
-              </a>
-            </li>
-            <li class="item">
-              <a class="text" href="#">
-                blog
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="text" href="#">
-                shop
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="text" href="#">
-                contact us
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.7" d="M1 1L5 5L9 1" stroke="#030D15" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="basket">
-          <img class="search" src="img/search.svg" alt="">
-          <img class="basket" src="img/basket.svg" alt="">
-          <img class="user" src="img/user.svg" alt="">
-          <button class="menu__burger burger" type="button">
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="section__wrapper hero__area">
-      <div class="container">
-        <div class="info">
-          <p class="alert">Favorite brands</p>
-
-          <h1><span>An exciting place</span>
-            for the whole family
-            to shop.</h1>
-
-          <p class="text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-
-          <button class="shop__btn">shop now</button>
-        </div>
-        <img class="colonka" src="img/colonka.png" alt="">
-        <div class="banner">
-          <div class="banner__items">
-            <div class="banner__item">
-              <img src="img/sun.svg" alt="">
-            </div>
-            <div class="banner__item">
-              <img src="img/pure.svg" alt="">
-            </div>
-            <div class="banner__item">
-              <img src="img/automotive.svg" alt="">
-            </div>
-            <div class="banner__item">
-              <img src="img/hand.svg" alt="">
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="section__wrapper">
+        <div class="container main-menu">
+          <div class="logo">
+            <a href=""><img src="img/Logo.svg" alt="" /></a>
           </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section__wrapper cards__area">
-      <div class="container">
-        <div class="area__title">
-          <p class="alert">New shop</p>
-          <h2 class="title__name">An enormous storehouse of facts</h2>
-          <p class="discript">The standard chunk of Lorem Ipsum used since the 1500s is
-            reproduced below for those interested.</p>
-        </div>
-        <div class="tech__cards">
-          <div class="tech__img1"><img src="img/one.png" alt="one"></div>
-          <div class="tech__img2"><img src="img/two.png" alt="two"></div>
-          <div class="tech__img3"><img src="img/thre.png" alt="thre"></div>
-          <div class="tech__img4"><img src="img/four.png" alt="four"></div>
-          <div class="tech__img5"><img src="img/five.png" alt="five"></div>
-          <div class="tech__img6"><img src="img/six.png" alt="six"></div>
-          <div class="tech__img7"><img src="img/sewen.png" alt="sewen"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section__wrapper user__contact">
-      <div class="container">
-        <div class="contact__sub">
-          <div class="contact">
-            <p class="alert">User Contact</p>
-            <h3>Contact Us for those interested.</h3>
-            <p class="discript">The standard chunk of Lorem Ipsum used since the is 
-              reproduced below for those interested.</p>
-          </div>
-          <div class="subscribe">
-            <form action="">
-              <input type="text" class="sub__mail" placeholder="Enter your email address">
-              <button class="sub__btn">subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="section__wrapper foot">
-      <div class="container">
-        <div class="footer__items">
-          <div class="footer__item about">
-            <img src="img/logo2.svg" alt="">
-            <p class="footer__info">STORE - worldwide fashion store since 1978.
-              We sell over 1000+ branded products on 
-              our web-site.</p>
-          </div>
-          <div class="footer__item">
-            <p class="item__name">information</p>
-            <ul class="footer__info">
-              <li><a href="#">New Collection</a></li>
-              <li><a href="#">About Store</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="#">Our Sitemap</a></li>
-              <li><a href="#">Orders History</a></li>
+          <nav class="wrapper__menu">
+            <ul class="menu">
+              <li class="item">
+                <a class="text" href="#">
+                  home
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="text" href="#">
+                  about
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="text" href="#">
+                  product
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="text" href="#">
+                  blog
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="text" href="#">
+                  shop
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="text" href="#">
+                  contact us
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.7"
+                      d="M1 1L5 5L9 1"
+                      stroke="#030D15"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
             </ul>
+          </nav>
+          <div class="basket">
+            <img class="search" src="img/search.svg" alt="" />
+            <img class="basket" src="img/basket.svg" alt="" />
+            <img class="user" src="img/user.svg" alt="" />
+            <button class="menu__burger burger" type="button">
+              <span class="burger_line"></span>
+              <span class="burger_line"></span>
+              <span class="burger_line"></span>
+              <span class="burger_line"></span>
+            </button>
           </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section__wrapper hero__area">
+        <div class="container">
+          <div class="info">
+            <p class="alert">Favorite brands</p>
 
-          <div class="footer__item">
-            <p class="item__name">footer menu</p>
-            <ul class="footer__info">
-              <li><a href="#">Instagram profile</a></li>
-              <li><a href="#">New Collection</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Purchase Theme</a></li>
-            </ul>
+            <h1>
+              <span>An exciting place</span> for the whole family to shop.
+            </h1>
+
+            <p class="text">
+              The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested.
+            </p>
+
+            <button class="shop__btn">shop now</button>
           </div>
-
-          <div class="footer__item">
-            <p class="item__name">useful links</p>
-            <ul class="footer__info">
-              <li><a href="#">Instagram profile</a></li>
-              <li><a href="#">New Collection</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Purchase Theme</a></li>
-            </ul>
-          </div>
-          <div class="footer__item about">
-            <p class="item__name">about the store</p>
-            <p class="footer__info">STORE - worldwide fashion store since 1978.
-              We sell over 1000+ branded products on
-              our web-site.</p>
-            
-            <p class="footer__link">www.company.com</p>
-
-            <div class="links">
-              <img src="img/fb.svg" alt="fb">
-              <img src="img/inst.svg" alt="inst">
-              <img src="img/twit.svg" alt="twit">
-              <img src="img/in.svg" alt="in">
-              <img src="img/yt.svg" alt="yt">
-            </div>
-
-            <div class="lang">
-              <img src="img/planet.svg" alt="">
-              <p class="lang__name">English</p>
-              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L5 5L9 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+          <img class="colonka" src="img/colonka.png" alt="" />
+          <div class="banner">
+            <div class="banner__items">
+              <div class="banner__item">
+                <img src="img/sun.svg" alt="" />
+              </div>
+              <div class="banner__item">
+                <img src="img/pure.svg" alt="" />
+              </div>
+              <div class="banner__item">
+                <img src="img/automotive.svg" alt="" />
+              </div>
+              <div class="banner__item">
+                <img src="img/hand.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+
+      <div class="section__wrapper cards__area">
+        <div class="container">
+          <div class="area__title">
+            <p class="alert">New shop</p>
+            <h2 class="title__name">An enormous storehouse of facts</h2>
+            <p class="discript">
+              The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested.
+            </p>
+          </div>
+          <div class="tech__cards">
+            <div class="tech__img1">
+              <img src="img/one.png" alt="one" />
+            </div>
+            <div class="tech__img2">
+              <img src="img/two.png" alt="two" />
+            </div>
+            <div class="tech__img3">
+              <img src="img/thre.png" alt="thre" />
+            </div>
+            <div class="tech__img4">
+              <img src="img/four.png" alt="four" />
+            </div>
+            <div class="tech__img5">
+              <img src="img/five.png" alt="five" />
+            </div>
+            <div class="tech__img6">
+              <img src="img/six.png" alt="six" />
+            </div>
+            <div class="tech__img7">
+              <img src="img/sewen.png" alt="sewen" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__wrapper user__contact">
+        <div class="container">
+          <div class="contact__sub">
+            <div class="contact">
+              <p class="alert">User Contact</p>
+              <h3>Contact Us for those interested.</h3>
+              <p class="discript">
+                The standard chunk of Lorem Ipsum used since the is reproduced
+                below for those interested.
+              </p>
+            </div>
+            <div class="subscribe">
+              <form action="">
+                <input
+                  type="email"
+                  class="sub__mail"
+                  placeholder="Enter your email address"
+                />
+                <button type="submit" class="sub__btn">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="section__wrapper foot">
+        <div class="container">
+          <div class="footer__items">
+            <div class="footer__item about">
+              <a href="#"><img src="img/logo2.svg" alt="" /></a>
+              <p class="footer__info">
+                STORE - worldwide fashion store since 1978. We sell over 1000+
+                branded products on our web-site.
+              </p>
+            </div>
+            <div class="footer__item">
+              <p class="item__name">information</p>
+              <ul class="footer__info">
+                <li><a href="#">New Collection</a></li>
+                <li><a href="#">About Store</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Our Sitemap</a></li>
+                <li><a href="#">Orders History</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__item">
+              <p class="item__name">footer menu</p>
+              <ul class="footer__info">
+                <li><a href="#">Instagram profile</a></li>
+                <li><a href="#">New Collection</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Purchase Theme</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__item">
+              <p class="item__name">useful links</p>
+              <ul class="footer__info">
+                <li><a href="#">Instagram profile</a></li>
+                <li><a href="#">New Collection</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Purchase Theme</a></li>
+              </ul>
+            </div>
+            <div class="footer__item about">
+              <p class="item__name">about the store</p>
+              <p class="footer__info">
+                STORE - worldwide fashion store since 1978. We sell over 1000+
+                branded products on our web-site.
+              </p>
+
+              <a class="footer__link">www.company.com</a>
+
+              <div class="links">
+                <a href="#"><img src="img/fb.svg" alt="fb" /></a>
+                <a href="#"><img src="img/inst.svg" alt="inst" /></a>
+                <a href="#"><img src="img/twit.svg" alt="twit" /></a>
+                <a href="#"><img src="img/in.svg" alt="in" /></a>
+                <a href="#"><img src="img/yt.svg" alt="yt" /></a>
+              </div>
+
+              <div class="lang">
+                <img src="img/planet.svg" alt="" />
+                <p class="lang__name">English</p>
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
